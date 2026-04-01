@@ -1,0 +1,28 @@
+.banner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.705)),
+    url(https://www.estadao.com.br/resizer/v2/FIVYQFU6J5ND3PYRA6XQHR4NW4.jpg?quality=80&auth=04a93b8f4c288302da64fd8a96da7bb7cc11dff70430e4ba66587218d5b6011f&width=720&height=410&focal=0,0)
+      center / cover no-repeat;
+  text-align: center;
+  color: white;
+}
+
+
+.banner h1 {
+  font-family: var(--fonte-1);
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--color-6);
+}
+
+.banner p {
+  font-family: var(--fonte-1);
+  font-size: 18px;
+  margin-bottom: 30px;
+   color: var(--color-6);
+}
