@@ -37,15 +37,13 @@ export function iniciarAvaliacoes() {
     `;
 
     lista.prepend(nova);
-   
+
     totalAvaliacoes++;
 
-  
     document.getElementById("contador").textContent = totalAvaliacoes;
     document.getElementById("nome").value = "";
     document.getElementById("comentario").value = "";
 
-   
     nota = 0;
     estrelas.forEach((e) => e.classList.remove("ativa"));
   });
