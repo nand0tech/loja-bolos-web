@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding: 0 20px;
+  padding: 20px ;
   align-items: center;
 }
 .conteiner-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-   width: 100%;
+  width: 100%;
   max-width: 1200px;
   align-items: stretch;
   background-color: var(--color1);
- 
 }
 #faleConosco {
   grid-column: 1 / -1;
@@ -25,7 +24,7 @@
   color: #d4af37;
 }
 #faleConosco h1 {
-  font-size: 60px;
+  font-size: clamp(30px, 2vw, 60px);
   color: var(--color-2);
 }
 #faleConosco p {
