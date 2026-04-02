@@ -26,7 +26,6 @@
   flex-direction: column;
 }
 
-/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -49,22 +48,19 @@ header {
   width: 100%;
   max-width: 1200px;
   padding: 0 20px;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 🔥 UM NO CANTO E OUTRO NO OUTRO */
   align-items: center;
+}
+nav {
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* 🔥 EMPURRA PARA A DIREITA */
 }
 
 header h1 {
   font-family: var(--fonte-1);
   font-size: 1.5rem;
-  color: var(--color-1);
-}
-
-/* NAV */
-nav {
-  display: flex;
-  align-items: center;
 }
 
 /* LINKS */
