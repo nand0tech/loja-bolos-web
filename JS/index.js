@@ -64,4 +64,4 @@ function carregarSecao(url, id, callback) {
 carregarSecao("./html-pages/reviews.html", "reviews", iniciarAvaliacoes);
 carregarSecao("./html-pages/categories.html", "categories", initionCategories);
 carregarSecao("./html-pages/contact.html", "contact");
-carregarSecao("../html-pages/about.html", "about");
+carregarSecao("./html-pages/about.html", "about");
