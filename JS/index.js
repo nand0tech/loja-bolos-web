@@ -3,20 +3,16 @@ import { initionCategories } from "./categories.js";
 const menu = document.querySelector(".menu-toggle");
 const nav = document.querySelector("nav");
 // HEADER
-menu.addEventListener("click", (e) => {
-  e.stopPropagation();
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active");
   nav.classList.toggle("active");
 });
 
 document.addEventListener("click", (e) => {
-  // fecha ao clicar em link
-  if (e.target.classList.contains("nav-link")) {
-    nav.classList.remove("active");
-  }
-
   // fecha ao clicar fora do menu
   if (!nav.contains(e.target) && !menu.contains(e.target)) {
     nav.classList.remove("active");
+    menu.classList.remove("active")
   }
 });
 
@@ -27,7 +23,7 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 300;
+    const sectionTop = section.offsetTop - 260;
     const sectionHeight = section.offsetHeight;
 
     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {

@@ -12,17 +12,17 @@
   color: white;
 }
 
-
 .banner h1 {
   font-family: var(--fonte-1);
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: clamp(30px, 3vw, 60px);
+  margin: 10px;
   color: var(--color-6);
 }
 
 .banner p {
   font-family: var(--fonte-1);
-  font-size: 18px;
+  font-size: clamp(18px, 2vw, 25px);
   margin-bottom: 30px;
-   color: var(--color-6);
+  color: var(--color-6);
+  margin: 5px;
 }

@@ -1,11 +1,19 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0 20px;
+  align-items: center;
+}
 .conteiner-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  width: 100%;
+   width: 100%;
+  max-width: 1200px;
   align-items: stretch;
   background-color: var(--color1);
-  padding: 20px;
+ 
 }
 #faleConosco {
   grid-column: 1 / -1;
@@ -30,6 +38,7 @@
   align-items: center;
   gap: 30px;
   padding: 20px;
+  max-width: 100%;
 }
 .informacoes div {
   width: 100%;
@@ -115,6 +124,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 #iframe {
   margin: 20px;
@@ -127,9 +137,9 @@ h5 {
 }
 
 footer {
- padding: 10px;
- text-align: center;
- color: var(--color-2);
+  padding: 10px;
+  text-align: center;
+  color: var(--color-2);
 }
 
 /* WhatsApp flutuante */
@@ -151,4 +161,23 @@ footer {
 
 .whatsapp img:hover {
   transform: scale(1.1);
+}
+@media (max-width: 750px) {
+  .conteiner-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+  .mapa {
+    margin: 0 20px;
+  }
+  #iframe {
+    max-width: 500px;
+    max-height: 300px;
+  }
+  .informacoes {
+    width: 100%;
+  }
 }
