@@ -16,7 +16,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Times, Times New Roman, serif;
+  font-family:
+    Times,
+    Times New Roman,
+    serif;
 }
 main {
   background: var(--color-6);
@@ -57,7 +60,7 @@ nav {
 }
 
 header h1 {
-   font-size: clamp(25px, 2vw, 30px);
+  font-size: clamp(25px, 2vw, 30px);
   color: var(--color-1);
 }
 
@@ -67,7 +70,7 @@ header h1 {
   color: var(--color-1);
   font-weight: 600;
   transition: 0.3s;
-   font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(15px, 2vw, 20px);
   position: relative;
 }
 
@@ -91,8 +94,12 @@ header h1 {
   color: var(--color-3);
 }
 
-footer{
+footer {
   background: var(--color-5);
+}
+
+footer p {
+  font-size: clamp(10px, 2vw, 20px);
 }
 @media (max-width: 750px) {
   .container {
