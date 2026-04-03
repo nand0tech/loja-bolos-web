@@ -12,7 +12,7 @@ document.addEventListener("click", (e) => {
   // fecha ao clicar fora do menu
   if (!nav.contains(e.target) && !menu.contains(e.target)) {
     nav.classList.remove("active");
-    menu.classList.remove("active")
+    menu.classList.remove("active");
   }
 });
 
@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 260;
+    const sectionTop = section.offsetTop - 300;
     const sectionHeight = section.offsetHeight;
 
     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {

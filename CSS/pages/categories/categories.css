@@ -25,10 +25,10 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  font-weight: 800;
   margin: 5px;
   transition: 0.3s;
-  font-size: clamp(11px, 2vw, 15px);
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 600;
   background: var(--color-1);
   color: var(--color-6);
 }
@@ -84,6 +84,7 @@
   gap: 20px;
   transition: 3ms;
   width: 100%;
+  background: var(--color-5);
 }
 .card:hover {
   border: 2px solid var(--color-4);
@@ -94,7 +95,6 @@
   flex-direction: column;
   align-items: stretch;
   justify-items: center;
-  font-size: 20px;
   height: 200px;
 }
 
@@ -108,21 +108,22 @@
 
 .card h3 {
   color: var(--color-1);
+  font-size: clamp(20px, 2vw, 25px);
 }
 .card p {
   color: var(--color-2);
+  font-size: clamp(15px, 2vw, 20px);
 }
-.card a {
-  display: inline-block;
+.btnBolo {
   background-color: var(--color-1);
   padding: 10px 10px;
   border-radius: 10px;
-  text-decoration: none;
   color: var(--color-6);
   font-weight: 600;
-  font-size: 15px;
+  font-size: clamp(15px, 2vw, 15px);
+  margin: 10px;
 }
-.card a:hover {
+.btnBolo:hover {
   background-color: var(--color-6);
   border: 2px solid var(--color-1);
   color: var(--color-1);
@@ -137,19 +138,11 @@
     gap: 10px;
   }
   .cardContent {
-    height: 100px;
+    height: 150px;
   }
-  .card h3 {
-    font-size: 16px;
-  }
-
-  .card p {
-    font-size: 14px;
-  }
-
-  .card a {
-    font-size: 13px;
-    padding: 8px;
+  .btnBolo {
+    padding: 10px;
+    margin: 10px;
   }
 
   .btnscontent {
@@ -160,7 +153,6 @@
     width: 100%;
     max-width: 400px;
     max-height: 50px;
-    font-size: 14px;
     padding: 12px;
     margin: 5px 0;
   }
